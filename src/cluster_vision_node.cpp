@@ -98,6 +98,8 @@ void ClusterVision::timerCallback()
     = std::chrono::duration_cast<std::chrono::milliseconds>(end_time - start_time).count();
   RCLCPP_INFO(this->get_logger(), "Plane extraction took %ld ms", duration_ms);
 
+  // Clustering
+
 #if defined(GPU_ACCELERATION) && defined(VISUALIZE_FEATURES)
   publishPlanes(best_plane, inlier_cloud);
 #elif defined(VISUALIZE_FEATURES)

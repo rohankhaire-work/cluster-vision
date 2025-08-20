@@ -1,0 +1,7 @@
+#ifndef CLUSTER_CLOUD__CLUSTER_CLOUD_HPP_
+#define CLUSTER_CLOUD__CLUSTER_CLOUD_HPP_
+
+class ClusterCloud
+{};
+
+#endif // CLUSTER_CLOUD__CLUSTER_CLOUD_HPP_
